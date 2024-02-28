@@ -8,11 +8,7 @@ export default async function Home() {
 
     console.log('data', data);
 
-    const formAction = async (formData) => {
-        'use server'
-        const firstName = await formData.get('firstName')
-        console.log('firstName', firstName);
-    }
+
 
   return (
     <main className={styles.main}>
@@ -25,9 +21,6 @@ export default async function Home() {
               })
           }
           {/*<Article data={data.items} />*/}
-          <form action={formAction}>
-              <input name={'firstName'} placeholder={'ender name'} />
-          </form>
       </div>
     </main>
   );
