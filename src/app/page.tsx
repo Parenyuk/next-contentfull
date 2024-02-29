@@ -1,6 +1,5 @@
-import { client } from './../../lib/contentful';
-import styles from "./page.module.css";
-import {Article} from "@/components/Article";
+import { client } from '@/lib/contentful';
+import {Article} from "@/src/shared/components/Article";
 
 export default async function Home() {
 
@@ -11,8 +10,8 @@ export default async function Home() {
 
 
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main>
+      <div>
       Contentful APP
           {
               data.items.map((item: any) => {
@@ -20,7 +19,6 @@ export default async function Home() {
                   return <Article data={item} />
               })
           }
-          {/*<Article data={data.items} />*/}
       </div>
     </main>
   );

@@ -1,0 +1,78 @@
+@mixin font($font-size, $lineHeight: normal, $fontWeight: normal) {
+  font-size: $font-size;
+
+  @if $lineHeight {
+    line-height: $lineHeight;
+  }
+
+  @if $fontWeight {
+    font-weight: $fontWeight;
+  }
+}
+
+@mixin to430 {
+  @media screen and (width < 430px) {
+    @content;
+  }
+}
+
+@mixin from430 {
+  @media screen and (width >= 430px) {
+    @content;
+  }
+}
+
+@mixin to540 {
+  @media screen and (width < 540px) {
+    @content;
+  }
+}
+
+@mixin from540 {
+  @media screen and (width >= 540px) {
+    @content;
+  }
+}
+
+@mixin to768 {
+  @media screen and (width < 768px) {
+    @content;
+  }
+}
+
+@mixin from768 {
+  @media screen and (width >= 768px) {
+    @content;
+  }
+}
+
+@mixin to1024 {
+  @media screen and (width < 1024px) {
+    @content;
+  }
+}
+
+@mixin from1024 {
+  @media screen and (width >= 1024px) {
+    @content;
+  }
+}
+
+
+@mixin to1440 {
+  @media screen and (width < 1440px) {
+    @content;
+  }
+}
+
+@mixin from1440 {
+  @media screen and (width >= 1440px) {
+    @content;
+  }
+}
+
+@mixin from1920 {
+  @media screen and (width >= 1920px) {
+    @content;
+  }
+}

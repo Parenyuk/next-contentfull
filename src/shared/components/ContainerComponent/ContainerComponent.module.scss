@@ -1,0 +1,18 @@
+@import "@/src/app/mixins";
+
+.container {
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+
+  @media screen and (width >= 1024px) and (width <= 1439px) {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include to1024 {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
