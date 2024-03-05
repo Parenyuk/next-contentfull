@@ -25,7 +25,7 @@ export const HeaderDesktop = ({}: ComponentType) => {
                     })
                 }
             </ul>
-            <Image src={Logo} width={180} height={80} alt={'logo'} />
+            {/*<Image src={Logo} width={180} height={80} alt={'logo'} />*/}
         </ContainerComponent>
     </header>)
 };
