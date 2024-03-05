@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import {ReactNode} from "react";
+import Script from 'next/script';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,5 +19,15 @@ type RootLayoutProps = {
 export default function RootLayout(props: RootLayoutProps) {
   const { children } = props
 
-  return children;
+  return <html lang={'en'}>
+  <head>
+    <Script
+        src={`https://cdn-cookieyes.com/client_data/aede9197ab354614db98ff51/script.js`}
+        strategy="beforeInteractive"
+    />
+  </head>
+  {children}
+  </html>
+
+
 }
