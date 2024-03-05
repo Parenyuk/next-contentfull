@@ -1,5 +1,6 @@
 import {Article} from "@/src/shared/components/Article";
 import {client} from "@/lib/contentful";
+import {ContainerComponent} from "@/src/shared/components/ContainerComponent";
 
 export default async function HomePage () {
 
@@ -8,7 +9,7 @@ export default async function HomePage () {
     console.log('data', data);
 
     return (
-        <div>
+        <ContainerComponent>
             Contentful APP
             {
                 data.items.map((item: any) => {
@@ -16,6 +17,6 @@ export default async function HomePage () {
                     return <Article data={item} />
                 })
             }
-        </div>
+        </ContainerComponent>
     )
 };
