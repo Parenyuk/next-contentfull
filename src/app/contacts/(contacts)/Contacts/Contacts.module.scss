@@ -38,17 +38,28 @@
   display: flex;
   width: 100%;
   padding: 40px 0;
+
+  @include to768 {
+    flex-direction: column;
+  }
 }
 
 .leftPart {
   width: 50%;
   margin-right: 100px;
+
+  @include to768 {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .rightPart {
   width: 50%;
 
-
+  @include to768 {
+    width: 100%;
+  }
 }
 
 .form {

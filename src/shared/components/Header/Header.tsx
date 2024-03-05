@@ -8,6 +8,5 @@ type ComponentType = {
 export const Header = ({}: ComponentType) => {
     return (<>
         <HeaderDesktop />
-        {/*123*/}
     </>)
 };
