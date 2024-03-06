@@ -21,10 +21,16 @@ export default function RootLayout(props: RootLayoutProps) {
 
   return <html lang={'en'}>
   <head>
+    {/*<Script*/}
+    {/*    src={`https://cdn-cookieyes.com/client_data/aede9197ab354614db98ff51/script.js`}*/}
+    {/*    strategy="beforeInteractive"*/}
+    {/*/>*/}
     <Script
-        src={`https://cdn-cookieyes.com/client_data/aede9197ab354614db98ff51/script.js`}
-        strategy="beforeInteractive"
-    />
+        id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="af730fb6-83b9-49b4-9c79-d36710d1c29b"
+        data-blockingmode="auto"
+        type="text/javascript" />
   </head>
   {children}
   </html>
